@@ -16,6 +16,7 @@ public class InputHandler : MonoBehaviour
     [SerializeField] private string attackHeld = "Attack Held";
     [SerializeField] private string aim = "Aim";
     [SerializeField] private string reload = "Reload";
+    [SerializeField] private string interact = "Interact";
     [SerializeField] private string jump = "Jump";
     [SerializeField] private string sprint = "Sprint";
     [SerializeField] private string crouch = "Crouch";
@@ -29,6 +30,7 @@ public class InputHandler : MonoBehaviour
     private InputAction attackAction;
     private InputAction aimAction;
     private InputAction reloadAction;
+    private InputAction interactAction;
     private InputAction jumpAction;
     private InputAction sprintAction;
     private InputAction crouchAction;
@@ -41,6 +43,7 @@ public class InputHandler : MonoBehaviour
     public bool AttackTriggered { get; private set; }
     public bool AttackHeld { get; private set; }
     public bool AimTriggered { get; private set; }
+    public bool InteractTriggered { get; private set; }
     public bool ReloadTriggered { get; private set; }
     public bool JumpTriggered { get; private set; }
     public bool SprintTriggered { get; private set; }
@@ -70,6 +73,7 @@ public class InputHandler : MonoBehaviour
         attackHeldAction = input.FindActionMap(actionMapName).FindAction(attackHeld);
         aimAction = input.FindActionMap(actionMapName).FindAction(aim);
         reloadAction = input.FindActionMap(actionMapName).FindAction(reload);
+        interactAction = input.FindActionMap(actionMapName).FindAction(interact);
         jumpAction = input.FindActionMap(actionMapName).FindAction(jump);
         sprintAction = input.FindActionMap(actionMapName).FindAction(sprint);
         crouchAction = input.FindActionMap(actionMapName).FindAction(crouch);
@@ -94,6 +98,7 @@ public class InputHandler : MonoBehaviour
         jumpAction.performed += context => JumpTriggered = !JumpTriggered;
         sprintAction.performed += context => SprintTriggered = !SprintTriggered;
         
+        interactAction.performed += context => InteractTriggered = true;
         reloadAction.performed += context => ReloadTriggered = true;
         crouchAction.performed += context => CrouchTriggered = true;
         slideAction.performed += context => SlideTriggered = true;
@@ -105,6 +110,7 @@ public class InputHandler : MonoBehaviour
     {
         // Reset triggers after they've been read for a single frame
         AttackTriggered = false;
+        InteractTriggered = false;
         ReloadTriggered = false;
         CrouchTriggered = false;
         SlideTriggered = false;
@@ -118,6 +124,8 @@ public class InputHandler : MonoBehaviour
         lookAction.Enable();
         attackAction.Enable();
         aimAction.Enable();
+        interactAction.Enable();
+        reloadAction.Enable();
         jumpAction.Enable();
         sprintAction.Enable();
         crouchAction.Enable();
@@ -132,6 +140,8 @@ public class InputHandler : MonoBehaviour
         lookAction.Disable();
         attackAction.Disable();
         aimAction.Disable();
+        interactAction.Disable();
+        reloadAction.Disable();
         jumpAction.Disable();
         sprintAction.Disable();
         crouchAction.Disable();
