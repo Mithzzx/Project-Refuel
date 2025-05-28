@@ -1,114 +1,109 @@
-# ⛽ **Refuel** 🚗💨
+<p align="center">
+  <img src="https://via.placeholder.com/400x200.png?text=⛽+REFUEL+LOGO+🚗" alt="Refuel Game Logo">
+</p>
 
-**Welcome to the Ultimate Gas Station Management Experience!**  
-Manage your own gas station, serve customers, and expand your empire in this immersive simulator for mobile and PC!
+<h1><p align="center">
+  Project Refuel
+</p></h1>
 
-![Gameplay Screenshot](screenshots/gameplay1.png) <!-- Replace with actual screenshot path -->
+<p align="center">
+  <strong>Welcome to the Ultimate Gas Station Management Experience!</strong><br>
+  Build, manage, and expand your own gas station empire in this immersive simulator for mobile and PC!
+</p>
 
-## 🎮 **About the Game**
-
-Take on the role of a gas station manager in this hyper-casual yet deep simulation game!  
-🚨 **Key Highlights**:
-- **Mobile-first** design with intuitive touch controls
-- **PC-compatible** with enhanced keyboard/mouse support
-- Manage fuel pumps, convenience stores, and car washes
-- Handle crazy customers, unexpected events, and economic challenges
-- Expand from a small roadside stop to a mega fuel empire!
-
-## ✨ **Features**
-
-### ⛽ **Fuel Simulation**
-- Realistic vehicle fueling mechanics
-- Handle different fuel types (Regular, Premium, Diesel)
-- Dynamic pricing based on market fluctuations
-
-### 🛠️ **Station Management**
-- Inventory management for snacks/drinks
-- Hire and manage staff (mechanics, cashiers)
-- Upgrade pumps, add car washes, expand parking
-- Balance books and handle emergencies
-
-### 🌆 **Dynamic World**
-- Day/night cycle with shifting customer patterns
-- Weather system affecting gameplay
-- Random events: fuel shortages, price wars, celebrity visits!
-
-### 🕹️ **Mini-Games**
-- Quick-time events for oil changes
-- Puzzle minigames for repairing vehicles
-- Speed challenges for rush hour service
-
-### 📱 **Multiplatform Support**
-- **Mobile**: Optimized for touch with haptic feedback
-- **PC**: 4K support, ultrawide compatibility, detailed graphics settings
-
-## 📥 **Installation**
-
-### **Mobile (Android)**
-1. Download `GasStationSimulator.apk` from [Releases](https://github.com/yourusername/repo/releases)
-2. Enable "Install from unknown sources"
-3. Install and play!
-
-### **PC (Windows)**
-1. Download `GasStationSimulator_PC.zip` from [Releases](https://github.com/yourusername/repo/releases)
-2. Extract and run `GasStationSimulator.exe`
-
-### **Unity Developers**
-1. Clone repo
-2. Open in Unity 2022.3.6f1 or newer
-3. Install TextMeshPro and Cinemachine via Package Manager
-
-## 🕹️ **Controls**
-
-| **Mobile** 📱          | **PC** 🖥️               |
-|-----------------------|------------------------|
-| Tap & drag to rotate  | WASD/Mouse to move     |
-| Pinch to zoom          | Left-click interact    |
-| Swipe for quick actions| Space = Emergency brake|
-| Hold for fueling       | F = Start fueling      |
-
-## 🚀 **Roadmap**
-
-### Phase 1 (v1.0)
-- [x] Core fueling mechanics
-- [x] Basic store management
-- [ ] Achievements system
-
-### Phase 2 (v2.0)
-- [ ] Electric vehicle charging stations
-- [ ] Food court expansion
-- [ ] Competitor gas stations
-
-### Phase 3 (v3.0)
-- [ ] Multiplayer fuel price wars
-- [ ] Weather disasters scenario
-- [ ] VR support (PC only)
-
-## 🤝 **Contributing**
-
-Fuel up our development!  
-🔧 **Ways to contribute**:
-- Report bugs via [Issues](https://github.com/yourusername/repo/issues)
-- Suggest features in Discussions
-- Submit PRs for new pump models or UI improvements
-
-Check our [Contribution Guidelines](CONTRIBUTING.md) before revving up your engines!
-
-## 📜 **Credits**
-
-- Lead Developer: [Mithun Rajan]
-- Art: [Asset Store Credits]
-- Sound Effects: 
-- Beta Testers: Our awesome Discord community!
-
-## 📄 **License**
-
-MIT License - Pump responsibly! ⚠️ See [LICENSE](LICENSE) for details.
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Mobile%20%7C%20PC-brightgreen" alt="Platform">
+  <img src="https://img.shields.io/badge/Status-In%20Development-orange" alt="Status">
+  <img src="https://img.shields.io/github/license/yourusername/repo" alt="License">
+  <img src="https://img.shields.io/github/stars/yourusername/repo?style=social" alt="GitHub Stars">
+</p>
 
 ---
 
-**Start your engines!** 🏁  
-⭐ Star this repo if you want to see weekly updates!  
-🐛 Found a bug? Let us know in Issues!  
+## 📸 **In Action!**
 
-*"Service with a smile... and occasional oil stains!"* 😄
+![Gameplay Screenshot](https://via.placeholder.com/700x350.png?text=Dynamic+Gameplay+Screenshot)
+*Manage pumps, serve customers, and watch your station grow! (Replace with actual screenshot)*
+
+---
+
+## 🎮 **About the Game**
+
+Step into the boots of a gas station manager in this **hyper-casual yet surprisingly deep** simulation game! Take on the challenge of building a roadside stop from the ground up and turning it into a sprawling, high-tech fuel oasis. Are you ready to handle the pressure?
+
+> ### 🚨 **Key Highlights** 🚨
+>
+> * 📱 **Mobile-First Design:** Intuitive touch controls & haptic feedback for gaming on the go.
+> * 💻 **PC Powerhouse:** Full keyboard/mouse support, enhanced graphics, 4K & ultrawide compatibility.
+> * ⛽ **Core Loop:** Manage fuel pumps, a bustling convenience store, and a high-tech car wash.
+> * 🤪 **Dynamic Challenges:** Handle crazy customers, unexpected events, and fluctuating economies.
+> * 🏆 **Empire Building:** Expand your humble station into a mega fuel network!
+
+---
+
+## ✨ **Features**
+
+We're packing *Refuel* with features to keep you engaged:
+
+### ⛽ **Fuel Simulation**
+
+* **Realistic Mechanics:** Feel the flow as you fuel up various vehicles.
+* **Fuel Variety:** Offer Regular, Premium, and Diesel – cater to every engine!
+* **Dynamic Pricing:** Watch the market and adjust your prices for maximum profit (or chaos!).
+
+### 🛠️ **Station Management**
+
+* **Store Tycoon:** Stock shelves, manage inventory, and keep those snacks moving!
+* **Hire & Train:** Build your dream team of cashiers and mechanics.
+* **Upgrade & Expand:** Add new pumps, supercharge your car wash, and expand your parking lot.
+* **Crisis Control:** Balance the books and react swiftly to emergencies!
+
+### 🌆 **Dynamic World**
+
+* **Day & Night Cycle:** Customer patterns shift from sunrise to sunset.
+* **Wild Weather:** Rain, shine, or even snow – the weather impacts your business!
+* **Random Events:** Brace yourself for fuel shortages, price wars, celebrity visits, and more!
+
+### 🕹️ **Engaging Mini-Games**
+
+* **Oil Change QTEs:** Quick-time events for speedy service.
+* **Repair Puzzles:** Use your smarts to fix up vehicles.
+* **Rush Hour Sprints:** Speed challenges to test your efficiency!
+
+---
+
+## 📥 **Installation / Getting Started**
+
+Ready to start your engines? Here's how to get *Refuel* running:
+
+### **📱 Mobile (Android)**
+
+1.  Navigate to the [**Releases**](https://github.com/yourusername/repo/releases) page.
+2.  Download the latest `Refuel_Android.apk` file.
+3.  On your device, **enable "Install from unknown sources"** (usually in Security settings).
+4.  Open the downloaded `.apk` file and follow the prompts to install.
+5.  Launch **Refuel** and start managing!
+
+### **💻 PC (Windows)**
+
+1.  Head over to the [**Releases**](https://github.com/yourusername/repo/releases) page.
+2.  Download the `Refuel_PC.zip` file.
+3.  **Extract** the contents of the `.zip` file to your desired location (e.g., `C:\Games\Refuel`).
+4.  Run `Refuel.exe`.
+5.  Enjoy the high-octane action!
+
+---
+
+## 🤝 **Contributing**
+
+We're building this game with passion and welcome contributions! Check out our `CONTRIBUTING.md` file (you should create this!) for guidelines on how to help, report bugs, or suggest features.
+
+## 📜 **License**
+
+This project is licensed under the [MIT License](LICENSE.md) (Replace with your actual license).
+
+---
+
+<p align="center">
+  <strong>Thanks for checking out Refuel! Follow us for updates!</strong> ⛽✨
+</p>

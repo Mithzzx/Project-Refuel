@@ -5,7 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - Enemy
-  - DeadZombie
+  - Path
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -14,8 +15,8 @@ TagManager:
   - Water
   - UI
   - Hand
-  - 
-  - 
+  - Ground
+  - Interact
   - 
   - 
   - 

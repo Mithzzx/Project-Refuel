@@ -1,14 +1,13 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class AnimationHandler : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private InputHandler input;
     [SerializeField] private PlayerMovement pm;
-    [SerializeField] private GameObject lowerBody;
-    [SerializeField] private GameObject shadowBody;
-    [SerializeField] private GameObject hands;
+    [SerializeField] private GameObject body;
     [SerializeField] private Transform orientation;
     
     
@@ -35,22 +34,15 @@ public class AnimationHandler : MonoBehaviour
     private readonly int turnRight90Hash = Animator.StringToHash("Right Turn 90");
     private readonly int turnLeft90Hash = Animator.StringToHash("Left Turn 90");
     private Animator lowerBodyAnimator;
-    private Animator shadowBodyAnimator;
-    private Animator handsAnimator;
     private lower lowerBodyScript;
     private Transform lowerBodyTransform;
-    private Transform shadowBodyTransform;
 
     private void Start()
     {
-        lowerBodyAnimator = lowerBody.GetComponent<Animator>();
-        lowerBodyScript = lowerBody.GetComponent<lower>();
-        lowerBodyTransform = lowerBody.transform;
+        lowerBodyAnimator = body.GetComponent<Animator>();
+        lowerBodyScript = body.GetComponent<lower>();
+        lowerBodyTransform = body.transform;
         
-        shadowBodyAnimator = shadowBody.GetComponent<Animator>();
-        shadowBodyTransform = shadowBody.transform;
-        
-        handsAnimator = hands.GetComponent<Animator>();
         lowerBodyAnimator.applyRootMotion = false;
     }
 
@@ -94,7 +86,6 @@ public class AnimationHandler : MonoBehaviour
         if (!lowerBodyScript.rootMotion)
         {
             lowerBodyAnimator.applyRootMotion = false;
-            shadowBodyAnimator.applyRootMotion = false;
             lowerBodyScript.rootMotion = true;
         }
         
@@ -107,31 +98,26 @@ public class AnimationHandler : MonoBehaviour
             lowerBodyAnimator.SetBool(turnHash, true);
             lowerBodyAnimator.applyRootMotion = false;
             lowerBodyTransform.rotation = Quaternion.Euler(0, orientation.eulerAngles.y, 0);
-            shadowBodyTransform.rotation = Quaternion.Euler(0, orientation.eulerAngles.y, 0);
         }
         // Check if the difference is approximately 80 degrees
         else if (Mathf.Abs(yawDifference) >= 75)
         {
             lowerBodyAnimator.applyRootMotion = true;
-            shadowBodyAnimator.applyRootMotion = true;
             
             if (yawDifference > 0)
             {
                 // Turned 80 degrees to the right
                 lowerBodyAnimator.Play(turnRight90Hash);
-                shadowBodyAnimator.Play(turnRight90Hash);
             }
             else
             {
                 // Turned 80 degrees to the left
                 lowerBodyAnimator.Play(turnLeft90Hash);
-                shadowBodyAnimator.Play(turnLeft90Hash);
             }
             
             if (Mathf.Abs(yawDifference) >= 120)
             {
                 lowerBodyTransform.rotation= Quaternion.Euler(0, orientation.eulerAngles.y, 0);
-                shadowBodyTransform.rotation= Quaternion.Euler(0, orientation.eulerAngles.y, 0);
             }
         }
 
@@ -139,24 +125,17 @@ public class AnimationHandler : MonoBehaviour
         lowerBodyAnimator.SetFloat(xVelocityHash, xVelocity);
         lowerBodyAnimator.SetFloat(yVelocityHash, yVelocity);
         
-        // Set the xVelocity and yVelocity parameters in the Animator
-        shadowBodyAnimator.SetFloat(xVelocityHash, xVelocity);
-        shadowBodyAnimator.SetFloat(yVelocityHash, yVelocity);
-        
         // Set the idle parameter in the Animator
         idle = pm.rb.linearVelocity.magnitude < 0.1f;
         lowerBodyAnimator.SetBool(idleHash,idle);
-        shadowBodyAnimator.SetBool(idleHash,idle);
         
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             lowerBodyAnimator.Play("Jumping Up");
-            shadowBodyAnimator.Play("Jumping Up");
         }
 
         inAir = !(pm.isGrounded);
         lowerBodyAnimator.SetBool(inAirHash,inAir);
-        shadowBodyAnimator.SetBool(inAirHash,inAir);
     }
 }
