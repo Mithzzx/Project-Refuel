@@ -14,8 +14,8 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Mobile%20%7C%20PC-brightgreen" alt="Platform">
   <img src="https://img.shields.io/badge/Status-In%20Development-orange" alt="Status">
-  <img src="https://img.shields.io/github/license/yourusername/repo" alt="License">
-  <img src="https://img.shields.io/github/stars/yourusername/repo?style=social" alt="GitHub Stars">
+  <img src="https://img.shields.io/github/license/Mithzzx/Project-Refuel" alt="License">
+  <img src="https://img.shields.io/github/stars/Mithzzx/Project-Refuel?style=social" alt="GitHub Stars">
 </p>
 
 ---
