@@ -41,30 +41,30 @@ Step into the boots of a gas station manager in this **hyper-casual yet surprisi
 
 ---
 
-## ✨ **Features**
+## **Features**
 
 We're packing *Refuel* with features to keep you engaged:
 
-### ⛽ **Fuel Simulation**
+### **Fuel Simulation**
 
 * **Realistic Mechanics:** Feel the flow as you fuel up various vehicles.
 * **Fuel Variety:** Offer Regular, Premium, and Diesel – cater to every engine!
 * **Dynamic Pricing:** Watch the market and adjust your prices for maximum profit (or chaos!).
 
-### 🛠️ **Station Management**
+### **Station Management**
 
 * **Store Tycoon:** Stock shelves, manage inventory, and keep those snacks moving!
 * **Hire & Train:** Build your dream team of cashiers and mechanics.
 * **Upgrade & Expand:** Add new pumps, supercharge your car wash, and expand your parking lot.
 * **Crisis Control:** Balance the books and react swiftly to emergencies!
 
-### 🌆 **Dynamic World**
+### **Dynamic World**
 
 * **Day & Night Cycle:** Customer patterns shift from sunrise to sunset.
 * **Wild Weather:** Rain, shine, or even snow – the weather impacts your business!
 * **Random Events:** Brace yourself for fuel shortages, price wars, celebrity visits, and more!
 
-### 🕹️ **Engaging Mini-Games**
+### **Engaging Mini-Games**
 
 * **Oil Change QTEs:** Quick-time events for speedy service.
 * **Repair Puzzles:** Use your smarts to fix up vehicles.
@@ -72,11 +72,11 @@ We're packing *Refuel* with features to keep you engaged:
 
 ---
 
-## 📥 **Installation / Getting Started**
+## **Installation / Getting Started**
 
 Ready to start your engines? Here's how to get *Refuel* running:
 
-### **📱 Mobile (Android)**
+### ** Mobile (Android)**
 
 1.  Navigate to the [**Releases**](https://github.com/yourusername/repo/releases) page.
 2.  Download the latest `Refuel_Android.apk` file.
@@ -84,7 +84,7 @@ Ready to start your engines? Here's how to get *Refuel* running:
 4.  Open the downloaded `.apk` file and follow the prompts to install.
 5.  Launch **Refuel** and start managing!
 
-### **💻 PC (Windows)**
+### ** PC (Windows)**
 
 1.  Head over to the [**Releases**](https://github.com/yourusername/repo/releases) page.
 2.  Download the `Refuel_PC.zip` file.
@@ -94,11 +94,11 @@ Ready to start your engines? Here's how to get *Refuel* running:
 
 ---
 
-## 🤝 **Contributing**
+## **Contributing**
 
 We're building this game with passion and welcome contributions! Check out our `CONTRIBUTING.md` file (you should create this!) for guidelines on how to help, report bugs, or suggest features.
 
-## 📜 **License**
+## **License**
 
 This project is licensed under the [MIT License](LICENSE.md) (Replace with your actual license).
 
